@@ -1,0 +1,6 @@
+{
+  "appId": "com.apestudios.games.prueba",
+  "appName": "Phaser Game",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

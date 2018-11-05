@@ -1,6 +1,18 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
     "target": "es5",
-    "module": "commonjs"
-  }
+    "noImplicitAny": false,
+    "outDir": "www/build",
+    "rootDir": ".",
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

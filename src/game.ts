@@ -15,10 +15,8 @@ const config: GameConfig = {
   width: WORLD_WIDTH,
   height: WORLD_HEIGHT,
   type: Phaser.AUTO,
-  parent: 'game',
-  backgroundColor: '#93e7ff',
-  pixelArt: false,
-  zoom: 1,
+  //backgroundColor: '#93e7ff',
+  //zoom: 1,
   physics: {
     default: 'arcade',
     arcade: {
@@ -31,10 +29,8 @@ const { StatusBar, SplashScreen } = Plugins;
 
 export class Game extends Phaser.Game {
 
-  constructor(GameConfig: config) {
-
+  constructor(config: GameConfig) {
     super(config);
-    
     this.scene.add('Boot', BootScene, false);
     this.scene.add('Preload', PreloadScene, false);
     this.scene.add('GameTitle', GameTitleScene, false);
